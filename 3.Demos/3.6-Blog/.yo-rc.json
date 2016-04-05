@@ -1,0 +1,7 @@
+{
+  "generator-react-webpack": {
+    "appName": "kevinBlog",
+    "style": "css",
+    "postcss": false
+  }
+}

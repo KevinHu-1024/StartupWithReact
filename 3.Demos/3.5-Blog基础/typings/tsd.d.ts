@@ -7,5 +7,4 @@
 /// <reference path="react/react-addons-transition-group.d.ts" />
 /// <reference path="react/react-addons-update.d.ts" />
 /// <reference path="react/react-dom.d.ts" />
-/// <reference path="react/react-global.d.ts" />
 /// <reference path="react/react.d.ts" />

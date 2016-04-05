@@ -1,0 +1,26 @@
+[ERR!] cwd  : /home/kevin/文档/ReactDemos/3.Demos/3.5-Blog基础
+[ERR!] os   : Linux 4.3.5-300.fc23.x86_64
+[ERR!] argv : "/usr/lib/nodejs/bin/node" "/usr/lib/nodejs/bin/tsd" "install" "jquery" "react" "react-dom" "react-router" "marked"
+[ERR!] node : v4.3.2
+[ERR!] tsd  : 0.6.5
+[ERR!] Error: read ECONNRESET
+[ERR!] CODE : ECONNRESET
+[ERR!] read ECONNRESET
+This is most likely not a problem with tsd itself
+and is related to network connectivity.
+In most cases you are behind a proxy or have bad network settings.
+
+If you are behind a proxy, please make sure that the
+'proxy' config is set properly.  See: https://github.com/DefinitelyTyped/tsd#tsdrc
+[ERR!] 
+Error: read ECONNRESET
+    at exports._errnoException (util.js:870:11)
+    at TLSWrap.onread (net.js:544:26)
+
+[ERR!] tsd.json: {"version":"v4","repo":"borisyankov/DefinitelyTyped","ref":"master","path":"typings","bundle":"typings/tsd.d.ts","installed":{"react/react.d.ts":{"commit":"d969b903d1fce89a5e43828ec68458b4f852db4d"},"react/react-dom.d.ts":{"commit":"d969b903d1fce89a5e43828ec68458b4f852db4d"},"react/react-addons-create-fragment.d.ts":{"commit":"d969b903d1fce89a5e43828ec68458b4f852db4d"},"react/react-addons-css-transition-group.d.ts":{"commit":"d969b903d1fce89a5e43828ec68458b4f852db4d"},"react/react-addons-transition-group.d.ts":{"commit":"d969b903d1fce89a5e43828ec68458b4f852db4d"},"react/react-addons-linked-state-mixin.d.ts":{"commit":"d969b903d1fce89a5e43828ec68458b4f852db4d"},"react/react-addons-perf.d.ts":{"commit":"d969b903d1fce89a5e43828ec68458b4f852db4d"},"react/react-addons-pure-render-mixin.d.ts":{"commit":"d969b903d1fce89a5e43828ec68458b4f852db4d"},"react/react-addons-test-utils.d.ts":{"commit":"d969b903d1fce89a5e43828ec68458b4f852db4d"},"react/react-addons-update.d.ts":{"commit":"d969b903d1fce89a5e43828ec68458b4f852db4d"}}}
+
+[ERR!] .tsdrc could not be retrieved
+
+[ERR!] Please include the following file with any support request:
+    /home/kevin/文档/ReactDemos/3.Demos/3.5-Blog基础/tsd-debug.log
+
