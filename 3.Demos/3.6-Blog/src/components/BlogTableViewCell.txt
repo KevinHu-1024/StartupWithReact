@@ -1,0 +1,32 @@
+import * as React from 'react';
+import * as ReactDOM from 'react-dom';
+
+var BlogTableViewCell = React.createClass({
+    displayName: "BlogTableViewCell",
+    rawMarkup: function() {
+        var rawMarkup = marked(this.props.body.toString(), {sanitize: true});
+        return { __html: rawMarkup };
+    },
+    render: function() {
+        return (
+            <li>
+                <h3>
+                {this.props.title}
+                </h3>
+                <p dangerouslySetInnerHTML={this.rawMarkup()} ></p>
+            </li>
+        );
+    }
+});
+
+// export class  BlogTableViewCell extends React.Component<any, any> {
+//     render() {
+//         return (
+//             <li>
+//                 <span>2016/04/02</span>
+//                 <a href="https://api.github.com/repos/lifesinger/blog/issues/227">善良比聪明重要</a>
+//                 <span>18</span><span>个评论</span>
+//             </li>
+//         );
+//     }
+// }

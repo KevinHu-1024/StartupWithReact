@@ -1,0 +1,43 @@
+import * as React from 'react';
+import * as ReactDOM from 'react-dom';
+
+import { BlogTableViewCell } from './BlogTableViewCell';
+
+import { blogs } from '../../mock/blogs';
+
+/**
+ * BlogTableView
+ */
+var BlogTableView = React.createClass({
+    displayName: "BlogTableView",
+    render: function () {
+        var tableNodes = this.props.data.map(function(article) {
+            return (
+                <BlogTableViewCell author={article.user.login} title={article.title}>
+                {article.body}
+                </BlogTableViewCell>
+            );
+        });        
+        return (
+            <ul>
+                {tableNodes}
+            </ul>
+        );
+    }    
+})
+// export class BlogTableView extends React.Component<any, any> {
+//     constructor(props) {
+//         super(props);
+//         this.state = {
+//             data: props.initialData
+//         };
+//     }   
+//     render() {
+//         return (
+//             <ul>
+//                 <BlogTableViewCell />
+//                 <BlogTableViewCell />          
+//             </ul>
+//         );
+//     }    
+// }
